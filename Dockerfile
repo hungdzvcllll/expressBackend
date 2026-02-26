@@ -4,6 +4,6 @@ WORKDIR /app
 COPY package.json /app
 COPY .. /
 RUN npm install
-Run npm build --omit=dev
+RUN npm build --omit=dev
 
 CMD ["npm", "start"]
