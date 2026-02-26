@@ -2,7 +2,7 @@ FROM node:latest
 WORKDIR /app
 
 COPY package.json /app
-COPY .. /
+COPY .. /app
 RUN npm install --omit=dev
 
 CMD ["npm", "start"]
