@@ -8,8 +8,8 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "node dist/main.js",
-    "dev": "ts-node main.ts",
+    "start": "node /app/dist/main.js",
+    "dev": "ts-node /app/main.ts",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
@@ -18,8 +18,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "deploy": "npm install --omit=dev && node dist/main.js",  
-    "start:prod": "npm install --omit=dev && node dist/main.js" 
+    "deploy": "npm install --omit=dev && node /app/dist/main.js",  
+    "start:prod": "npm install --omit=dev && node /app/dist/main.js" 
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
