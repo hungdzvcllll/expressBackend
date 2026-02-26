@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishOrderDetailController = void 0;
-const DishOrderDetailsService_1 = require("../service/DishOrderDetailsService");
+const DishOrderDetailsService_1 = require("service/DishOrderDetailsService");
 const service = new DishOrderDetailsService_1.DishOrderDetailsService();
 class DishOrderDetailController {
     static async detail(req, res) {

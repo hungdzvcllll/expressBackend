@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserService = void 0;
 const bcrypt = require("bcrypt");
-const User_1 = require("../model/User");
+const User_1 = require("model/User");
 const MailService_1 = require("./MailService");
-const data_source_1 = require("../data-source");
+const data_source_1 = require("data-source");
 require('dotenv').config();
 const JWT_SECRET = process.env.JWT_SECRET_KEY;
 const jwt = require('jsonwebtoken');

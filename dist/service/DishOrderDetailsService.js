@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishOrderDetailsService = void 0;
-const data_source_1 = require("../data-source");
-const DishOrderDetails_1 = require("../model/DishOrderDetails");
-const Dish_1 = require("../model/Dish");
+const data_source_1 = require("data-source");
+const DishOrderDetails_1 = require("model/DishOrderDetails");
+const Dish_1 = require("model/Dish");
 const UserService_1 = require("./UserService");
 const orderDetails = data_source_1.AppDataSource.getRepository(DishOrderDetails_1.DishOrderDetails);
 const dishRepo = data_source_1.AppDataSource.getRepository(Dish_1.default);

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableOrderController = void 0;
-const tableOrderService_1 = require("../service/tableOrderService");
+const tableOrderService_1 = require("service/tableOrderService");
 const service = new tableOrderService_1.TableOrderService();
 class TableOrderController {
     static async order(req, res) {

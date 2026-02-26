@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VnPayController = void 0;
-const VnPayService_1 = require("../service/VnPayService");
+const VnPayService_1 = require("service/VnPayService");
 const service = new VnPayService_1.VnPayService();
 class VnPayController {
     static async getLink(req, res) {

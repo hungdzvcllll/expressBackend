@@ -4,12 +4,12 @@ exports.AppDataSource = void 0;
 require("reflect-metadata");
 const typeorm_1 = require("typeorm");
 require("dotenv/config");
-const User_1 = require("./model/User");
-const TableOrder_1 = require("./model/TableOrder");
-const DishOrderDetails_1 = require("./model/DishOrderDetails");
-const DishOrder_1 = require("./model/DishOrder");
-const Dish_1 = require("./model/Dish");
-const Table_1 = require("./model/Table");
+const User_1 = require("model/User");
+const TableOrder_1 = require("model/TableOrder");
+const DishOrderDetails_1 = require("model/DishOrderDetails");
+const DishOrder_1 = require("model/DishOrder");
+const Dish_1 = require("model/Dish");
+const Table_1 = require("model/Table");
 exports.AppDataSource = new typeorm_1.DataSource({
     type: "mysql",
     host: "turntable.proxy.rlwy.net",

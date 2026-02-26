@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Security_1 = require("../security/Security");
+const Security_1 = require("security/Security");
 const express_1 = require("express");
-const DishController_1 = require("../controller/DishController");
-const FileHandles_1 = require("../FileHandle/FileHandles");
+const DishController_1 = require("controller/DishController");
+const FileHandles_1 = require("FileHandle/FileHandles");
 const express = require("express");
 const dishRouter = (0, express_1.Router)();
 dishRouter.get("/findAll", DishController_1.DishController.findAll);

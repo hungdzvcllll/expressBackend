@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableController = void 0;
-const TableService_1 = require("../service/TableService");
+const TableService_1 = require("service/TableService");
 const service = new TableService_1.TableService();
 class TableController {
     static async findAll(req, res) {

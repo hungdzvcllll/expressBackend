@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableService = void 0;
-const data_source_1 = require("../data-source");
-const Table_1 = require("../model/Table");
+const data_source_1 = require("data-source");
+const Table_1 = require("model/Table");
 const tableRepo = data_source_1.AppDataSource.getRepository(Table_1.default);
 class TableService {
     async findAll() {

@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishOrderService = void 0;
 const DishOrderDetailsService_1 = require("./DishOrderDetailsService");
-const data_source_1 = require("../data-source");
-const DishOrder_1 = require("../model/DishOrder");
+const data_source_1 = require("data-source");
+const DishOrder_1 = require("model/DishOrder");
 const UserService_1 = require("./UserService");
 const detailService = new DishOrderDetailsService_1.DishOrderDetailsService();
 const orderRepo = data_source_1.AppDataSource.getRepository(DishOrder_1.default);

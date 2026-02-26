@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableOrderService = void 0;
-const data_source_1 = require("../data-source");
-const TableOrder_1 = require("../model/TableOrder");
-const Table_1 = require("../model/Table");
+const data_source_1 = require("data-source");
+const TableOrder_1 = require("model/TableOrder");
+const Table_1 = require("model/Table");
 const UserService_1 = require("./UserService");
 const typeorm_1 = require("typeorm");
 const Orderrepo = data_source_1.AppDataSource.getRepository(TableOrder_1.default);

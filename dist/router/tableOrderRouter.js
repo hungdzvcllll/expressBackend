@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const TableOrderController_1 = require("../controller/TableOrderController");
-const Security_1 = require("../security/Security");
+const TableOrderController_1 = require("controller/TableOrderController");
+const Security_1 = require("security/Security");
 const tableOrderRouter = (0, express_1.Router)();
 tableOrderRouter.post("/order", (req, res, next) => { (0, Security_1.default)(req, res, next, ["USER"]); }, TableOrderController_1.TableOrderController.order);
 tableOrderRouter.put("/cancel/:id", (req, res, next) => { (0, Security_1.default)(req, res, next, ["USER"]); }, TableOrderController_1.TableOrderController.cancel);

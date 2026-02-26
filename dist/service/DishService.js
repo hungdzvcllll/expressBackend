@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishService = void 0;
-const data_source_1 = require("../data-source");
-const Dish_1 = require("../model/Dish");
+const data_source_1 = require("data-source");
+const Dish_1 = require("model/Dish");
 const dishRepo = data_source_1.AppDataSource.getRepository(Dish_1.default);
 class DishService {
     async findAll() {

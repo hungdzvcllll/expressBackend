@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VnPayService = void 0;
 const DishOrderService_1 = require("./DishOrderService");
-const vnpayconffig_1 = require("../vnpayConfig/vnpayconffig");
+const vnpayconffig_1 = require("vnpayConfig/vnpayconffig");
 const date_fns_1 = require("date-fns");
 const dishOrderService = new DishOrderService_1.DishOrderService();
 class VnPayService {

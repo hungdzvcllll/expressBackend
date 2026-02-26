@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserController = void 0;
-const UserService_1 = require("../service/UserService");
+const UserService_1 = require("service/UserService");
 const userService = new UserService_1.UserService();
 class UserController {
     static async register(req, res) {
