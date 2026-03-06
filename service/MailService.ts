@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend("API_KEY");
+const resend = new Resend("re_TmveEj1n_MzRsa2QFrks62VCmrxEvnuvi");
 export class MailService{
     async sendEmail(mailTo:string,code:string):Promise<void>{
         await resend.emails.send({
