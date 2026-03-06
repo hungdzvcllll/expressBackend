@@ -3,6 +3,5 @@ WORKDIR /app
 
 COPY package.json /app
 COPY .. /app
-RUN apt-get install -y \
-  nodejs
-CMD ["npm", ,"start"]
+RUN npm install
+CMD ["npm" ,"start"]
