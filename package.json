@@ -18,8 +18,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "deploy": "npm install --omit=dev && node dist/main.js",  
-    "start:prod": "npm install --omit=dev && node dist/main.js" 
+    "deploy": "npm install --omit=dev && node dist/main.js",
+    "start:prod": "npm install --omit=dev && node dist/main.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -33,6 +33,7 @@
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.2",
+    "resend": "^6.9.3",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.25"
   },

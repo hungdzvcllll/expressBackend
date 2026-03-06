@@ -1,29 +1,14 @@
+import { Resend } from "resend";
+
+const resend = new Resend("API_KEY");
 export class MailService{
-    sendEmail(mailTo:string,code:string):void{
-        let nodemailer = require('nodemailer');
-
-        let transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'hungb1577@gmail.com',
-                pass: 'qvkn tvqw pstg ctii'
-            }
-        });
-
-        let mailOptions = {
-            from: 'hungb1577@gmail.com',
+    async sendEmail(mailTo:string,code:string):Promise<void>{
+        await resend.emails.send({
+            from: "onboarding@resend.dev",
             to: mailTo,
-            subject: 'RegisterCode',
-            text: code
-        };
-
-        transporter.sendMail(mailOptions, function(error, info){
-            if (error) {
-                console.log(error);
-            } else {
-                 console.log('Email sent: ' + info.response);
-            }
-       });
+            subject: "Register code",
+            html: "<p>"+code+"</p>"
+});
     }
 }
 export default MailService;
