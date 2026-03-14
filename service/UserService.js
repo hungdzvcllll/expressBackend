@@ -38,9 +38,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserService = void 0;
 var bcrypt = require("bcrypt");
-var User_1 = require("../model/User");
+var User_1 = require("model/User");
 var MailService_1 = require("./MailService");
-var data_source_1 = require("../data-source");
+var data_source_1 = require("data-source");
 require('dotenv').config();
 var JWT_SECRET = process.env.JWT_SECRET_KEY;
 var jwt = require('jsonwebtoken');

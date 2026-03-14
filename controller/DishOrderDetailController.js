@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishOrderDetailController = void 0;
-var DishOrderDetailsService_1 = require("../service/DishOrderDetailsService");
+var DishOrderDetailsService_1 = require("service/DishOrderDetailsService");
 var service = new DishOrderDetailsService_1.DishOrderDetailsService();
 var DishOrderDetailController = (function () {
     function DishOrderDetailController() {

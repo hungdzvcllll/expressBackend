@@ -37,8 +37,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableService = void 0;
-var data_source_1 = require("../data-source");
-var Table_1 = require("../model/Table");
+var data_source_1 = require("data-source");
+var Table_1 = require("model/Table");
 var tableRepo = data_source_1.AppDataSource.getRepository(Table_1.default);
 var TableService = (function () {
     function TableService() {

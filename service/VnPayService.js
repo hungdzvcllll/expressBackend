@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VnPayService = void 0;
 var DishOrderService_1 = require("./DishOrderService");
-var vnpayconffig_1 = require("../vnpayConfig/vnpayconffig");
+var vnpayconffig_1 = require("vnpayConfig/vnpayconffig");
 var date_fns_1 = require("date-fns");
 var dishOrderService = new DishOrderService_1.DishOrderService();
 var VnPayService = (function () {

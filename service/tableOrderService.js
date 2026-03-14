@@ -37,9 +37,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableOrderService = void 0;
-var data_source_1 = require("../data-source");
-var TableOrder_1 = require("../model/TableOrder");
-var Table_1 = require("../model/Table");
+var data_source_1 = require("data-source");
+var TableOrder_1 = require("model/TableOrder");
+var Table_1 = require("model/Table");
 var UserService_1 = require("./UserService");
 var typeorm_1 = require("typeorm");
 var Orderrepo = data_source_1.AppDataSource.getRepository(TableOrder_1.default);

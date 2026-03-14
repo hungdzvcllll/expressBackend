@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserController = void 0;
-var UserService_1 = require("../service/UserService");
+var UserService_1 = require("service/UserService");
 var userService = new UserService_1.UserService();
 var UserController = (function () {
     function UserController() {

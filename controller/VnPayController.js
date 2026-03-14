@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VnPayController = void 0;
-var VnPayService_1 = require("../service/VnPayService");
+var VnPayService_1 = require("service/VnPayService");
 var service = new VnPayService_1.VnPayService();
 var VnPayController = (function () {
     function VnPayController() {

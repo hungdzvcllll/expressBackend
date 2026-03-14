@@ -38,8 +38,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DishOrderService = void 0;
 var DishOrderDetailsService_1 = require("./DishOrderDetailsService");
-var data_source_1 = require("../data-source");
-var DishOrder_1 = require("../model/DishOrder");
+var data_source_1 = require("data-source");
+var DishOrder_1 = require("model/DishOrder");
 var UserService_1 = require("./UserService");
 var detailService = new DishOrderDetailsService_1.DishOrderDetailsService();
 var orderRepo = data_source_1.AppDataSource.getRepository(DishOrder_1.default);

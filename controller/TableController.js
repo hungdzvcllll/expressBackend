@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableController = void 0;
-var TableService_1 = require("../service/TableService");
+var TableService_1 = require("service/TableService");
 var service = new TableService_1.TableService();
 var TableController = (function () {
     function TableController() {

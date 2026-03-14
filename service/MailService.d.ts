@@ -1,4 +1,4 @@
 export declare class MailService {
-    sendEmail(mailTo: string, code: string): void;
+    sendEmail(mailTo: string, code: string): Promise<void>;
 }
 export default MailService;
