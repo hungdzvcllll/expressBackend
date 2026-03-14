@@ -10,10 +10,10 @@ import Table from "model/Table";
 
 export const AppDataSource = new DataSource({
   type: "mysql",
-  host:"switchyard.proxy.rlwy.net",
-  port: 48492,
+  host:"ballast.proxy.rlwy.net",
+  port: 24359,
   username: "root",
-  password: "YUlFVmjXfQCDnzKfHHTmQBcFCpmFgNyb",
+  password: "SnkBEuYNaFZcznmwxIvnfgzZLjNEjDhQ",
   database: "railway",
   synchronize: true,
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
