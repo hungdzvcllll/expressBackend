@@ -16,6 +16,8 @@ export const AppDataSource = new DataSource({
   password: "FqtfjWqvbsdcWkbCbwvUcdIrJsEkIecn",
   database: "railway",
   synchronize: true,
- 
+  extra: {
+    connectTimeout: 20000 // milliseconds (10s)
+  },
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
