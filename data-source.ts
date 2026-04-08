@@ -17,7 +17,9 @@ export const AppDataSource = new DataSource({
   database: "railway",
   synchronize: true,
    extra: {
-    connectionLimit: 25
-  }
+    connectionLimit: 10,
+    connectTimeout: 10000,
+  acquireTimeout: 10000
+  },
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
