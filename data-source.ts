@@ -16,21 +16,8 @@ export const AppDataSource = new DataSource({
   password: "FqtfjWqvbsdcWkbCbwvUcdIrJsEkIecn",
   database: "railway",
   synchronize: true,
-  extra: {
-    connectTimeout: 20000,
-
-    // QUAN TRỌNG
-    enableKeepAlive: true,
-    keepAliveInitialDelay: 0,
-
-    // tránh bị drop connection
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
-  },
-
-  // tránh crash toàn app khi mất kết nối
-  retryAttempts: 5,
-  retryDelay: 3000,
+   extra: {
+    connectionLimit: 25
+  }
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
