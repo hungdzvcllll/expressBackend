@@ -9,17 +9,21 @@ import Dish from "model/Dish";
 import Table from "model/Table";
 
 export const AppDataSource = new DataSource({
+  export const AppDataSource = new DataSource({
   type: "mysql",
-  host:"mainline.proxy.rlwy.net",
+  host: "mainline.proxy.rlwy.net",
   port: 30257,
   username: "root",
   password: "FqtfjWqvbsdcWkbCbwvUcdIrJsEkIecn",
   database: "railway",
+
   synchronize: true,
-   extra: {
-    connectionLimit: 10,
-    connectTimeout: 10000,
-  acquireTimeout: 10000
+
+  extra: {
+    connectionLimit: 10,           // pool size
+    connectTimeout: 10000,         // timeout connect (ms)
+    enableKeepAlive: true,         // giữ connection sống
+    keepAliveInitialDelay: 0,
   },
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
