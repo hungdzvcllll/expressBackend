@@ -20,10 +20,8 @@ export const AppDataSource = new DataSource({
   synchronize: true,
 
   extra: {
-    connectionLimit: 10,           // pool size
-    connectTimeout: 10000,         // timeout connect (ms)
-    enableKeepAlive: true,         // giữ connection sống
-    keepAliveInitialDelay: 0,
+         // timeout connect (ms)
+    enableKeepAlive: true
   },
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
