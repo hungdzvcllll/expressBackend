@@ -12,11 +12,11 @@ const Dish_1 = require("./model/Dish");
 const Table_1 = require("./model/Table");
 exports.AppDataSource = new typeorm_1.DataSource({
      type: "mysql",
-  host: "sql100.infinityfree.com",
-  port: 3306,
-  username: "if0_41637469",
-  password: "y6zKn7DnAmPg",
-  database: "if0_41637469_railway",
+  host: "metro.proxy.rlwy.net",
+  port: 43324,
+  username: "root",
+  password: "WgvIsheoXkZdwATHDRIyDgOdTDnXbsVi",
+  database: "railway",
 
   synchronize: true,
     extra: {
