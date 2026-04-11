@@ -18,10 +18,16 @@ export const AppDataSource = new DataSource({
   database: "railway",
 
   synchronize: true,
-
-  extra: {
-         // timeout connect (ms)
-    enableKeepAlive: true
+    extra: {
+    connectionLimit: 10,          // tránh mở quá nhiều connection
+    connectTimeout: 10000,        // timeout khi connect (10s)
+    enableKeepAlive: true,
+    keepAliveInitialDelay: 0,
   },
+
+  // 👇 cực kỳ quan trọng
+  acquireTimeout: 10000,
+  retryAttempts: 5,
+  retryDelay: 3000,
   entities: [User,TableOrder,Table,DishOrderDetails,DishOrder,Dish]
 });
