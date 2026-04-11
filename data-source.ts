@@ -11,11 +11,11 @@ import Table from "model/Table";
 export const AppDataSource = new DataSource({
   export const AppDataSource = new DataSource({
   type: "mysql",
-  host: "metro.proxy.rlwy.net",
-  port: 43324,
-  username: "root",
-  password: "WgvIsheoXkZdwATHDRIyDgOdTDnXbsVi",
-  database: "railway",
+  host: "sql100.infinityfree.com",
+  port: 3306,
+  username: "if0_41637469",
+  password: "y6zKn7DnAmPg",
+  database: "if0_41637469_railway",
 
   synchronize: true,
     extra: {
